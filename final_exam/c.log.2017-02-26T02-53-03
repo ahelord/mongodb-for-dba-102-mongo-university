@@ -1,0 +1,83 @@
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten] MongoDB starting : pid=4737 port=27003 dbpath=/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z3 64-bit host=localhost.localdomain
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten] db version v3.4.0-rc3
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten] git version: 7d68067e5a6272bb463acc4e7a6c6a144148039c
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten] modules: none
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten] build environment:
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten]     distmod: rhel70
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-23T22:57:16.999-0500 I CONTROL  [initandlisten] options: { net: { port: 27003 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "z" }, storage: { dbPath: "data/z3", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "c.log" } }
+2017-02-23T22:57:17.046-0500 I -        [initandlisten] Detected data files in /home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z3 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-02-23T22:57:17.046-0500 I STORAGE  [initandlisten] 
+2017-02-23T22:57:17.046-0500 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-02-23T22:57:17.046-0500 I STORAGE  [initandlisten] See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-02-23T22:57:17.046-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=5095M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-23T22:57:18.051-0500 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-02-23T22:57:18.051-0500 I STORAGE  [initandlisten] The size storer reports that the oplog contains 322 records totaling to 31020 bytes
+2017-02-23T22:57:18.051-0500 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-02-23T22:57:18.118-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-23T22:57:18.118-0500 I CONTROL  [initandlisten] 
+2017-02-23T22:57:18.118-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-23T22:57:18.118-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-23T22:57:18.118-0500 I CONTROL  [initandlisten] 
+2017-02-23T22:57:18.130-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z3/diagnostic.data'
+2017-02-23T22:57:18.130-0500 I NETWORK  [thread1] waiting for connections on port 27003
+2017-02-23T22:57:18.135-0500 I REPL     [replExecDBWorker-2] New replica set config in use: { _id: "z", version: 1, protocolVersion: 1, members: [ { _id: 1, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27002", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('58ae563b1435ca67253508bf') } }
+2017-02-23T22:57:18.135-0500 I REPL     [replExecDBWorker-2] This node is localhost:27003 in the config
+2017-02-23T22:57:18.135-0500 I REPL     [replExecDBWorker-2] transition to STARTUP2
+2017-02-23T22:57:18.135-0500 I REPL     [replExecDBWorker-2] Starting replication storage threads
+2017-02-23T22:57:18.136-0500 I REPL     [replExecDBWorker-2] Starting replication fetcher thread
+2017-02-23T22:57:18.136-0500 I REPL     [replExecDBWorker-2] Starting replication applier thread
+2017-02-23T22:57:18.136-0500 I REPL     [replExecDBWorker-2] Starting replication reporter thread
+2017-02-23T22:57:18.136-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27001
+2017-02-23T22:57:18.136-0500 I REPL     [rsSync] transition to RECOVERING
+2017-02-23T22:57:18.136-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-23T22:57:18.137-0500 E REPL     [rsBackgroundSync] sync producer problem: 2 required optime (if provided) must be more recent than last fetched optime. requiredOpTime: { ts: Timestamp 1487907265000|1, t: 2 }, lastOpTimeFetched: { ts: Timestamp 1487908253000|1, t: 3 }
+2017-02-23T22:57:18.139-0500 I REPL     [rsSync] transition to SECONDARY
+2017-02-23T22:57:18.139-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27001
+2017-02-23T22:57:18.139-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-02-23T22:57:18.140-0500 I REPL     [ReplicationExecutor] Member localhost:27001 is now in state PRIMARY
+2017-02-23T22:57:18.140-0500 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state ARBITER
+2017-02-23T22:57:18.456-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:49150 #1 (1 connection now open)
+2017-02-23T22:57:18.457-0500 I NETWORK  [conn1] received client metadata from 127.0.0.1:49150 conn1: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-23T22:57:22.946-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:49154 #2 (2 connections now open)
+2017-02-23T22:57:22.946-0500 I NETWORK  [conn2] received client metadata from 127.0.0.1:49154 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-23T22:57:23.239-0500 I REPL     [rsBackgroundSync] sync source candidate: localhost:27001
+2017-02-23T22:57:23.240-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27001
+2017-02-23T22:57:23.242-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27001
+2017-02-23T22:57:23.243-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27001
+2017-02-23T22:57:23.244-0500 I REPL     [rsBackgroundSync] Starting rollback due to OplogStartMissing: our last op time fetched: { ts: Timestamp 1487908253000|1, t: 3 }. source's GTE: { ts: Timestamp 1487908382000|2, t: 4 } hashes: (-5107634331451847067/6929929515869031088)
+2017-02-23T22:57:23.244-0500 I REPL     [rsBackgroundSync] beginning rollback
+2017-02-23T22:57:23.244-0500 I REPL     [rsBackgroundSync] rollback 0
+2017-02-23T22:57:23.244-0500 I REPL     [rsBackgroundSync] transition to ROLLBACK
+2017-02-23T22:57:23.244-0500 I NETWORK  [rsBackgroundSync] legacy transport layer closing all connections
+2017-02-23T22:57:23.244-0500 I NETWORK  [rsBackgroundSync] Skip closing connection for connection # 2
+2017-02-23T22:57:23.244-0500 I NETWORK  [rsBackgroundSync] Skip closing connection for connection # 1
+2017-02-23T22:57:23.244-0500 I REPL     [rsBackgroundSync] rollback 1
+2017-02-23T22:57:23.245-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27001
+2017-02-23T22:57:23.245-0500 I REPL     [rsBackgroundSync] rollback 2 FindCommonPoint
+2017-02-23T22:57:23.246-0500 I REPL     [rsBackgroundSync] rollback our last optime:   Feb 23 22:50:53:1
+2017-02-23T22:57:23.246-0500 I REPL     [rsBackgroundSync] rollback their last optime: Feb 23 22:57:23:1
+2017-02-23T22:57:23.246-0500 I REPL     [rsBackgroundSync] rollback diff in end of log times: -390 seconds
+2017-02-23T22:57:23.246-0500 I REPL     [rsBackgroundSync] rollback 3 fixup
+2017-02-23T22:57:23.247-0500 I REPL     [rsBackgroundSync] rollback 3.5
+2017-02-23T22:57:23.248-0500 I REPL     [rsBackgroundSync] rollback 4 n:1
+2017-02-23T22:57:23.248-0500 I REPL     [rsBackgroundSync] minvalid={ ts: Timestamp 1487908643000|1, t: 4 }
+2017-02-23T22:57:23.248-0500 I REPL     [rsBackgroundSync] rollback 4.6
+2017-02-23T22:57:23.248-0500 I REPL     [rsBackgroundSync] rollback 4.7
+2017-02-23T22:57:23.250-0500 I REPL     [rsBackgroundSync] rollback 5 d:3 u:0
+2017-02-23T22:57:23.250-0500 I REPL     [rsBackgroundSync] rollback 6
+2017-02-23T22:57:23.250-0500 I REPL     [rsBackgroundSync] rollback done
+2017-02-23T22:57:23.250-0500 I REPL     [rsBackgroundSync] rollback finished
+2017-02-23T22:57:23.301-0500 I REPL     [rsBackgroundSync] transition to RECOVERING
+2017-02-23T22:57:23.301-0500 I REPL     [rsBackgroundSync] sync source candidate: localhost:27001
+2017-02-23T22:57:23.305-0500 I REPL     [rsSync] transition to SECONDARY
+2017-02-23T22:57:23.305-0500 W REPL     [rsBackgroundSync] Fetcher stopped querying remote oplog with error: InvalidSyncSource: sync source localhost:27001 (last optime: { ts: Timestamp 0|0, t: -1 }; sync source index: -1; primary index: 0) is no longer valid
+2017-02-23T22:57:23.305-0500 I REPL     [rsBackgroundSync] could not find member to sync from
+2017-02-23T22:57:23.356-0500 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27001: InvalidSyncSource: Sync target is no longer valid
+2017-02-23T22:57:34.307-0500 I REPL     [rsBackgroundSync] sync source candidate: localhost:27001
+2017-02-23T23:01:39.589-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:49170 #3 (3 connections now open)
+2017-02-23T23:01:39.590-0500 I NETWORK  [conn3] received client metadata from 127.0.0.1:49170 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-23T23:11:59.949-0500 I -        [conn3] end connection 127.0.0.1:49170 (3 connections now open)

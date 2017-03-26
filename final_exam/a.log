@@ -1,0 +1,90 @@
+2017-02-25T21:53:00.017-0500 I CONTROL  [initandlisten] MongoDB starting : pid=4504 port=27001 dbpath=/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1 64-bit host=localhost.localdomain
+2017-02-25T21:53:00.018-0500 I CONTROL  [initandlisten] db version v3.4.0-rc3
+2017-02-25T21:53:00.018-0500 I CONTROL  [initandlisten] git version: 7d68067e5a6272bb463acc4e7a6c6a144148039c
+2017-02-25T21:53:00.018-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2017-02-25T21:53:00.018-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-25T21:53:00.018-0500 I CONTROL  [initandlisten] modules: none
+2017-02-25T21:53:00.018-0500 I CONTROL  [initandlisten] build environment:
+2017-02-25T21:53:00.018-0500 I CONTROL  [initandlisten]     distmod: rhel70
+2017-02-25T21:53:00.018-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-25T21:53:00.018-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-25T21:53:00.018-0500 I CONTROL  [initandlisten] options: { net: { port: 27001 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "z" }, storage: { dbPath: "data/z1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "a.log" } }
+2017-02-25T21:53:00.069-0500 W -        [initandlisten] Detected unclean shutdown - /home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1/mongod.lock is not empty.
+2017-02-25T21:53:00.124-0500 I -        [initandlisten] Detected data files in /home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-02-25T21:53:00.124-0500 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-02-25T21:53:00.124-0500 I STORAGE  [initandlisten] 
+2017-02-25T21:53:00.124-0500 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-02-25T21:53:00.125-0500 I STORAGE  [initandlisten] See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-02-25T21:53:00.125-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=5095M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-25T21:53:01.507-0500 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-02-25T21:53:01.508-0500 I STORAGE  [initandlisten] The size storer reports that the oplog contains 362 records totaling to 34863 bytes
+2017-02-25T21:53:01.508-0500 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-02-25T21:53:01.702-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-25T21:53:01.702-0500 I CONTROL  [initandlisten] 
+2017-02-25T21:53:01.702-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-25T21:53:01.702-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-25T21:53:01.702-0500 I CONTROL  [initandlisten] 
+2017-02-25T21:53:01.842-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1/diagnostic.data'
+2017-02-25T21:53:01.860-0500 I NETWORK  [thread1] waiting for connections on port 27001
+2017-02-25T21:53:01.862-0500 W NETWORK  [replExecDBWorker-0] Failed to connect to 127.0.0.1:27002, reason: Connection refused
+2017-02-25T21:53:01.862-0500 W NETWORK  [replExecDBWorker-0] Failed to connect to 127.0.0.1:27003, reason: Connection refused
+2017-02-25T21:53:01.863-0500 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "z", version: 1, protocolVersion: 1, members: [ { _id: 1, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27002", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('58ae563b1435ca67253508bf') } }
+2017-02-25T21:53:01.863-0500 I REPL     [replExecDBWorker-0] This node is localhost:27001 in the config
+2017-02-25T21:53:01.863-0500 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2017-02-25T21:53:01.863-0500 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-02-25T21:53:01.864-0500 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2017-02-25T21:53:01.864-0500 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2017-02-25T21:53:01.864-0500 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2017-02-25T21:53:01.865-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-25T21:53:01.865-0500 I REPL     [rsSync] transition to RECOVERING
+2017-02-25T21:53:01.865-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-25T21:53:01.866-0500 I REPL     [rsSync] transition to SECONDARY
+2017-02-25T21:53:01.868-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-02-25T21:53:01.869-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-25T21:53:01.998-0500 E REPL     [rsBackgroundSync] sync producer problem: 2 required optime (if provided) must be more recent than last fetched optime. requiredOpTime: { ts: Timestamp 1487907533000|1, t: 3 }, lastOpTimeFetched: { ts: Timestamp 1487909513000|1, t: 4 }
+2017-02-25T21:53:01.998-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-02-25T21:53:02.009-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-25T21:53:02.009-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-25T21:53:02.010-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-25T21:53:02.011-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-02-25T21:53:02.011-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-25T21:53:02.011-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-02-25T21:53:02.011-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-25T21:53:02.011-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-25T21:53:02.011-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-25T21:53:02.013-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27002 - HostUnreachable: Connection refused
+2017-02-25T21:53:02.013-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-25T21:53:02.013-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27002; HostUnreachable: Connection refused
+2017-02-25T21:53:02.013-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-25T21:53:02.144-0500 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2017-02-25T21:53:03.583-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:51726 #1 (1 connection now open)
+2017-02-25T21:53:03.585-0500 I -        [conn1] end connection 127.0.0.1:51726 (1 connection now open)
+2017-02-25T21:53:03.588-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:51734 #2 (1 connection now open)
+2017-02-25T21:53:03.589-0500 I NETWORK  [conn2] received client metadata from 127.0.0.1:51734 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-25T21:53:05.189-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:51746 #3 (2 connections now open)
+2017-02-25T21:53:05.191-0500 I -        [conn3] end connection 127.0.0.1:51746 (2 connections now open)
+2017-02-25T21:53:05.197-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:51754 #4 (2 connections now open)
+2017-02-25T21:53:05.197-0500 I NETWORK  [conn4] received client metadata from 127.0.0.1:51754 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-25T21:53:07.014-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-25T21:53:07.014-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-25T21:53:07.015-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-02-25T21:53:07.016-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27003
+2017-02-25T21:53:07.016-0500 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state ARBITER
+2017-02-25T21:53:07.016-0500 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state SECONDARY
+2017-02-25T21:53:11.958-0500 I REPL     [ReplicationExecutor] Starting an election, since we've seen no PRIMARY in the past 10000ms
+2017-02-25T21:53:11.958-0500 I REPL     [ReplicationExecutor] conducting a dry run election to see if we could be elected
+2017-02-25T21:53:11.959-0500 I REPL     [ReplicationExecutor] VoteRequester(term 4 dry run) received a yes vote from localhost:27002; response message: { term: 4, voteGranted: true, reason: "", ok: 1.0 }
+2017-02-25T21:53:11.959-0500 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2017-02-25T21:53:11.960-0500 I REPL     [ReplicationExecutor] VoteRequester(term 5) received a yes vote from localhost:27002; response message: { term: 5, voteGranted: true, reason: "", ok: 1.0 }
+2017-02-25T21:53:11.960-0500 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 5
+2017-02-25T21:53:11.960-0500 I REPL     [ReplicationExecutor] transition to PRIMARY
+2017-02-25T21:53:11.961-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-25T21:53:11.961-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-25T21:53:11.961-0500 I REPL     [ReplicationExecutor] My optime is most up-to-date, skipping catch-up and completing transition to primary.
+2017-02-25T21:53:11.962-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-02-25T21:53:11.962-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27003
+2017-02-25T21:53:12.114-0500 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2017-02-25T21:53:15.356-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:51784 #5 (3 connections now open)
+2017-02-25T21:53:15.357-0500 I NETWORK  [conn5] received client metadata from 127.0.0.1:51784 conn5: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-25T21:53:15.360-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:51788 #6 (4 connections now open)
+2017-02-25T21:53:15.360-0500 I NETWORK  [conn6] received client metadata from 127.0.0.1:51788 conn6: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }

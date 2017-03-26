@@ -1,0 +1,125 @@
+[lrodriguez@localhost replicaSetDirectory]$ mongod --dbpath 1 --port 27001 --smallfiles --oplogSize 50
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten] MongoDB starting : pid=5864 port=27001 dbpath=1 64-bit host=localhost.localdomain
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten] db version v3.4.0-rc3
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten] git version: 7d68067e5a6272bb463acc4e7a6c6a144148039c
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten] modules: none
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten] build environment:
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten]     distmod: rhel70
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-05T22:55:00.736-0500 I CONTROL  [initandlisten] options: { net: { port: 27001 }, replication: { oplogSizeMB: 50 }, storage: { dbPath: "1", mmapv1: { smallFiles: true } } }
+2017-02-05T22:55:00.779-0500 I STORAGE  [initandlisten] 
+2017-02-05T22:55:00.779-0500 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-02-05T22:55:00.779-0500 I STORAGE  [initandlisten] See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-02-05T22:55:00.779-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=5095M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-05T22:55:01.659-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-05T22:55:01.659-0500 I CONTROL  [initandlisten] 
+2017-02-05T22:55:01.659-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-05T22:55:01.659-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-05T22:55:01.659-0500 I CONTROL  [initandlisten] 
+2017-02-05T22:55:01.963-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '1/diagnostic.data'
+2017-02-05T22:55:02.328-0500 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-02-05T22:55:02.328-0500 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-02-05T22:55:02.330-0500 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2017-02-05T22:55:02.331-0500 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2017-02-05T22:55:02.331-0500 I NETWORK  [thread1] waiting for connections on port 27001
+2017-02-05T22:57:04.052-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:56658 #1 (1 connection now open)
+2017-02-05T22:57:04.053-0500 I NETWORK  [conn1] received client metadata from 127.0.0.1:56658 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-05T22:57:17.207-0500 I COMMAND  [conn1] command replication.foo appName: "MongoDB Shell" command: insert { insert: "foo", documents: [ { _id: ObjectId('5897f41cd7a5f3f6c2c5c3ad'), x: 0.0, y: 0.3332099500191508 } ], ordered: true } ninserted:1 keysInserted:1 numYields:0 reslen:29 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_command 266ms
+^Z
+[1]+  Stopped                 mongod --dbpath 1 --port 27001 --smallfiles --oplogSize 50
+[lrodriguez@localhost replicaSetDirectory]$ mongod --dbpath 1 --port 27001 --replSet abc --smallfiles --oplogSize 50
+2017-02-05T23:06:27.524-0500 I CONTROL  [initandlisten] MongoDB starting : pid=6272 port=27001 dbpath=1 64-bit host=localhost.localdomain
+2017-02-05T23:06:27.525-0500 I CONTROL  [initandlisten] db version v3.4.0-rc3
+2017-02-05T23:06:27.525-0500 I CONTROL  [initandlisten] git version: 7d68067e5a6272bb463acc4e7a6c6a144148039c
+2017-02-05T23:06:27.525-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2017-02-05T23:06:27.525-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-05T23:06:27.525-0500 I CONTROL  [initandlisten] modules: none
+2017-02-05T23:06:27.525-0500 I CONTROL  [initandlisten] build environment:
+2017-02-05T23:06:27.525-0500 I CONTROL  [initandlisten]     distmod: rhel70
+2017-02-05T23:06:27.525-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-05T23:06:27.525-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-05T23:06:27.525-0500 I CONTROL  [initandlisten] options: { net: { port: 27001 }, replication: { oplogSizeMB: 50, replSet: "abc" }, storage: { dbPath: "1", mmapv1: { smallFiles: true } } }
+2017-02-05T23:06:27.656-0500 I STORAGE  [initandlisten] exception in initAndListen: 98 Unable to lock file: 1/mongod.lock Resource temporarily unavailable. Is a mongod instance already running?, terminating
+2017-02-05T23:06:27.656-0500 I NETWORK  [initandlisten] shutdown: going to close listening sockets...
+2017-02-05T23:06:27.656-0500 I NETWORK  [initandlisten] shutdown: going to flush diaglog...
+2017-02-05T23:06:27.656-0500 I CONTROL  [initandlisten] now exiting
+2017-02-05T23:06:27.656-0500 I CONTROL  [initandlisten] shutting down with code:100
+[lrodriguez@localhost replicaSetDirectory]$ lsof -i tcp:27001
+COMMAND  PID       USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+mongod  5864 lrodriguez    6u  IPv4 142521      0t0  TCP *:27001 (LISTEN)
+mongod  5864 lrodriguez   21u  IPv4 162072      0t0  TCP localhost:27001->localhost:56658 (ESTABLISHED)
+[lrodriguez@localhost replicaSetDirectory]$ ls
+1  2  3  replication.js
+[lrodriguez@localhost replicaSetDirectory]$ cd 1
+[lrodriguez@localhost 1]$ ls
+collection-0-3051256129616894460.wt  index-1-3051256129616894460.wt  journal          storage.bson      WiredTiger.turtle
+collection-2-3051256129616894460.wt  index-3-3051256129616894460.wt  _mdb_catalog.wt  WiredTiger        WiredTiger.wt
+collection-5-3051256129616894460.wt  index-4-3051256129616894460.wt  mongod.lock      WiredTigerLAS.wt
+diagnostic.data                      index-6-3051256129616894460.wt  sizeStorer.wt    WiredTiger.lock
+[lrodriguez@localhost 1]$ cd ..
+[lrodriguez@localhost replicaSetDirectory]$ kill -9 5864
+[1]+  Killed                  mongod --dbpath 1 --port 27001 --smallfiles --oplogSize 50
+[lrodriguez@localhost replicaSetDirectory]$ lsof -i tcp:270017
+[lrodriguez@localhost replicaSetDirectory]$ lsof -i tcp:27001
+[lrodriguez@localhost replicaSetDirectory]$ mongod --dbpath 1 --port 27001 --replSet abc --smallfiles --oplogSize 50
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten] MongoDB starting : pid=6414 port=27001 dbpath=1 64-bit host=localhost.localdomain
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten] db version v3.4.0-rc3
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten] git version: 7d68067e5a6272bb463acc4e7a6c6a144148039c
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten] modules: none
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten] build environment:
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten]     distmod: rhel70
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-05T23:09:55.393-0500 I CONTROL  [initandlisten] options: { net: { port: 27001 }, replication: { oplogSizeMB: 50, replSet: "abc" }, storage: { dbPath: "1", mmapv1: { smallFiles: true } } }
+2017-02-05T23:09:55.393-0500 W -        [initandlisten] Detected unclean shutdown - 1/mongod.lock is not empty.
+2017-02-05T23:09:55.452-0500 I -        [initandlisten] Detected data files in 1 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-02-05T23:09:55.452-0500 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-02-05T23:09:55.452-0500 I STORAGE  [initandlisten] 
+2017-02-05T23:09:55.452-0500 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-02-05T23:09:55.452-0500 I STORAGE  [initandlisten] See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-02-05T23:09:55.452-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=5095M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-05T23:09:57.053-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-05T23:09:57.054-0500 I CONTROL  [initandlisten] 
+2017-02-05T23:09:57.054-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-05T23:09:57.054-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-05T23:09:57.054-0500 I CONTROL  [initandlisten] 
+2017-02-05T23:09:57.060-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '1/diagnostic.data'
+2017-02-05T23:09:57.289-0500 I REPL     [initandlisten] Did not find local voted for document at startup;  NoMatchingDocument: Did not find replica set lastVote document in local.replset.election
+2017-02-05T23:09:57.289-0500 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2017-02-05T23:09:57.289-0500 I NETWORK  [thread1] waiting for connections on port 27001
+2017-02-05T23:09:58.011-0500 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2017-02-05T23:10:23.845-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:56696 #1 (1 connection now open)
+2017-02-05T23:10:23.845-0500 I NETWORK  [conn1] received client metadata from 127.0.0.1:56696 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-05T23:13:46.009-0500 I COMMAND  [conn1] initiate : no configuration specified. Using a default configuration for the set
+2017-02-05T23:13:46.009-0500 I COMMAND  [conn1] created this configuration for initiation : { _id: "abc", version: 1, members: [ { _id: 0, host: "localhost.localdomain:27001" } ] }
+2017-02-05T23:13:46.009-0500 I REPL     [conn1] replSetInitiate admin command received from client
+2017-02-05T23:13:46.010-0500 I REPL     [conn1] replSetInitiate config object with 1 members parses ok
+2017-02-05T23:13:46.010-0500 I REPL     [conn1] ******
+2017-02-05T23:13:46.010-0500 I REPL     [conn1] creating replication oplog of size: 50MB...
+2017-02-05T23:13:46.205-0500 I STORAGE  [conn1] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-02-05T23:13:46.205-0500 I STORAGE  [conn1] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2017-02-05T23:13:46.206-0500 I STORAGE  [conn1] Scanning the oplog to determine where to place markers for truncation
+2017-02-05T23:13:46.460-0500 I REPL     [conn1] ******
+2017-02-05T23:13:46.953-0500 I REPL     [conn1] New replica set config in use: { _id: "abc", version: 1, protocolVersion: 1, members: [ { _id: 0, host: "localhost.localdomain:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5897f7fa8fe0d6298a75a8cb') } }
+2017-02-05T23:13:46.953-0500 I REPL     [conn1] This node is localhost.localdomain:27001 in the config
+2017-02-05T23:13:46.953-0500 I REPL     [conn1] transition to STARTUP2
+2017-02-05T23:13:46.953-0500 I REPL     [conn1] Starting replication storage threads
+2017-02-05T23:13:46.954-0500 I REPL     [conn1] Starting replication fetcher thread
+2017-02-05T23:13:46.954-0500 I REPL     [conn1] Starting replication applier thread
+2017-02-05T23:13:46.954-0500 I REPL     [conn1] Starting replication reporter thread
+2017-02-05T23:13:46.955-0500 I COMMAND  [conn1] command local.replset.minvalid appName: "MongoDB Shell" command: replSetInitiate { replSetInitiate: undefined } numYields:0 reslen:139 locks:{ Global: { acquireCount: { r: 11, w: 5, W: 2 }, acquireWaitCount: { W: 1 }, timeAcquiringMicros: { W: 69 } }, Database: { acquireCount: { r: 2, w: 2, W: 3 } }, Collection: { acquireCount: { r: 2 } }, Metadata: { acquireCount: { w: 1 } }, oplog: { acquireCount: { w: 2 } } } protocol:op_command 945ms
+2017-02-05T23:13:46.955-0500 I REPL     [rsSync] transition to RECOVERING
+2017-02-05T23:13:46.956-0500 I REPL     [rsSync] transition to SECONDARY
+2017-02-05T23:13:46.956-0500 I REPL     [rsSync] conducting a dry run election to see if we could be elected
+2017-02-05T23:13:46.956-0500 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2017-02-05T23:13:47.209-0500 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 1
+2017-02-05T23:13:47.209-0500 I REPL     [ReplicationExecutor] transition to PRIMARY
+2017-02-05T23:13:47.209-0500 I REPL     [ReplicationExecutor] Could not access any nodes within timeout when checking for additional ops to apply before finishing transition to primary. Will move forward with becoming primary anyway.
+2017-02-05T23:13:47.956-0500 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+
+

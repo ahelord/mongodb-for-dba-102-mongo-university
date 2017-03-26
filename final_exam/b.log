@@ -1,0 +1,55 @@
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten] MongoDB starting : pid=4580 port=27002 dbpath=/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z2 64-bit host=localhost.localdomain
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten] db version v3.4.0-rc3
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten] git version: 7d68067e5a6272bb463acc4e7a6c6a144148039c
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten] modules: none
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten] build environment:
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten]     distmod: rhel70
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-25T21:53:01.914-0500 I CONTROL  [initandlisten] options: { net: { port: 27002 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "z" }, storage: { dbPath: "data/z2", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "b.log" } }
+2017-02-25T21:53:01.940-0500 W -        [initandlisten] Detected unclean shutdown - /home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z2/mongod.lock is not empty.
+2017-02-25T21:53:02.015-0500 I -        [initandlisten] Detected data files in /home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z2 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-02-25T21:53:02.016-0500 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
+2017-02-25T21:53:02.016-0500 I STORAGE  [initandlisten] 
+2017-02-25T21:53:02.016-0500 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-02-25T21:53:02.016-0500 I STORAGE  [initandlisten] See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-02-25T21:53:02.016-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=5095M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-25T21:53:03.549-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-25T21:53:03.549-0500 I CONTROL  [initandlisten] 
+2017-02-25T21:53:03.549-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-25T21:53:03.549-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-25T21:53:03.549-0500 I CONTROL  [initandlisten] 
+2017-02-25T21:53:03.581-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z2/diagnostic.data'
+2017-02-25T21:53:03.583-0500 I NETWORK  [thread1] waiting for connections on port 27002
+2017-02-25T21:53:03.586-0500 W NETWORK  [replExecDBWorker-0] Failed to connect to 127.0.0.1:27003, reason: Connection refused
+2017-02-25T21:53:03.586-0500 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "z", version: 1, protocolVersion: 1, members: [ { _id: 1, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27002", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('58ae563b1435ca67253508bf') } }
+2017-02-25T21:53:03.586-0500 I REPL     [replExecDBWorker-0] This node is localhost:27002 in the config
+2017-02-25T21:53:03.586-0500 I REPL     [replExecDBWorker-0] transition to ARBITER
+2017-02-25T21:53:03.587-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27001
+2017-02-25T21:53:03.587-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-25T21:53:03.588-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-25T21:53:03.588-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-25T21:53:03.588-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-25T21:53:03.589-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27001
+2017-02-25T21:53:03.589-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-25T21:53:03.590-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-25T21:53:03.590-0500 I REPL     [ReplicationExecutor] Member localhost:27001 is now in state SECONDARY
+2017-02-25T21:53:03.590-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-25T21:53:03.590-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-25T21:53:03.590-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-25T21:53:04.057-0500 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
+2017-02-25T21:53:05.191-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:60210 #1 (1 connection now open)
+2017-02-25T21:53:05.192-0500 I -        [conn1] end connection 127.0.0.1:60210 (1 connection now open)
+2017-02-25T21:53:05.197-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:60218 #2 (1 connection now open)
+2017-02-25T21:53:05.197-0500 I NETWORK  [conn2] received client metadata from 127.0.0.1:60218 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-25T21:53:07.015-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:60228 #3 (2 connections now open)
+2017-02-25T21:53:07.015-0500 I NETWORK  [conn3] received client metadata from 127.0.0.1:60228 conn3: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-25T21:53:08.591-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-25T21:53:08.593-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27003
+2017-02-25T21:53:08.594-0500 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state SECONDARY
+2017-02-25T21:53:11.962-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:60240 #4 (3 connections now open)
+2017-02-25T21:53:11.962-0500 I NETWORK  [conn4] received client metadata from 127.0.0.1:60240 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-25T21:53:13.592-0500 I REPL     [ReplicationExecutor] Member localhost:27001 is now in state PRIMARY
+2017-02-25T21:54:11.962-0500 I -        [conn3] end connection 127.0.0.1:60228 (3 connections now open)

@@ -1,0 +1,163 @@
+[lrodriguez@localhost replicaSetDirectory]$ ls
+1  2  3
+[lrodriguez@localhost replicaSetDirectory]$ cd ..
+[lrodriguez@localhost homework 4.1]$ ls
+replicaSetDirectory  replication.js
+[lrodriguez@localhost homework 4.1]$ cp replication.js /replicaSetDirectoy
+cp: cannot create regular file '/replicaSetDirectoy': Permission denied
+[lrodriguez@localhost homework 4.1]$ sudo cp replication.js /replicaSetDirectoy
+[sudo] password for lrodriguez: 
+[lrodriguez@localhost homework 4.1]$ ls
+replicaSetDirectory  replication.js
+[lrodriguez@localhost homework 4.1]$ cd replicaSetDirectory/
+[lrodriguez@localhost replicaSetDirectory]$ ls
+1  2  3
+[lrodriguez@localhost replicaSetDirectory]$ ls
+1  2  3  replication.js
+[lrodriguez@localhost replicaSetDirectory]$ sudo mongo --port 27001 --shell replication.js
+MongoDB shell version v3.4.0-rc3
+connecting to: mongodb://127.0.0.1:27001/
+MongoDB server version: 3.4.0-rc3
+type "help" for help
+Server has startup warnings: 
+2017-02-05T22:55:00.779-0500 I STORAGE  [initandlisten] 
+2017-02-05T22:55:01.659-0500 I CONTROL  [initandlisten] 
+2017-02-05T22:55:01.659-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-05T22:55:01.659-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-05T22:55:01.659-0500 I CONTROL  [initandlisten] 
+> homework.init ()
+ok
+> homework.a()
+5001
+> rs.initiate()
+2017-02-05T23:10:23.842-0500 E QUERY    [main] Error: error doing query: failed: network error while attempting to run command 'replSetInitiate' on host '127.0.0.1:27001'  :
+DB.prototype.runCommand@src/mongo/shell/db.js:132:1
+DB.prototype.adminCommand@src/mongo/shell/db.js:150:16
+rs.initiate@src/mongo/shell/utils.js:1169:12
+@(shell):1:1
+2017-02-05T23:10:23.844-0500 I NETWORK  [main] trying reconnect to 127.0.0.1:27001 (127.0.0.1) failed
+2017-02-05T23:10:23.845-0500 I NETWORK  [main] reconnect 127.0.0.1:27001 (127.0.0.1) ok
+> show dbs
+2017-02-05T23:11:19.351-0500 E QUERY    [main] Error: listDatabases failed:{
+	"ok" : 0,
+	"errmsg" : "not master and slaveOk=false",
+	"code" : 13435,
+	"codeName" : "NotMasterNoSlaveOk"
+} :
+_getErrorWithCode@src/mongo/shell/utils.js:25:13
+Mongo.prototype.getDBs@src/mongo/shell/mongo.js:62:1
+shellHelper.show@src/mongo/shell/utils.js:755:19
+shellHelper@src/mongo/shell/utils.js:645:15
+@(shellhelp2):1:1
+> rs.slaveOk()
+> show dbs
+admin        0.000GB
+local        0.000GB
+replication  0.000GB
+> use replication
+switched to db replication
+> db.foo.find(9
+... 
+... 
+> 
+> db.foo.find()
+Error: error: {
+	"ok" : 0,
+	"errmsg" : "node is not in primary or recovering state",
+	"code" : 13436,
+	"codeName" : "NotMasterOrSecondary"
+}
+> rs.status(9
+... 
+... 
+> 
+> rs.status()
+{
+	"info" : "run rs.initiate(...) if not yet done for the set",
+	"ok" : 0,
+	"errmsg" : "no replset config has been received",
+	"code" : 94,
+	"codeName" : "NotYetInitialized"
+}
+> rs.help(9
+... 
+... 
+> 
+> rs.help()
+	rs.status()                                { replSetGetStatus : 1 } checks repl set status
+	rs.initiate()                              { replSetInitiate : null } initiates set with default settings
+	rs.initiate(cfg)                           { replSetInitiate : cfg } initiates set with configuration cfg
+	rs.conf()                                  get the current configuration object from local.system.replset
+	rs.reconfig(cfg)                           updates the configuration of a running replica set with cfg (disconnects)
+	rs.add(hostportstr)                        add a new member to the set with default attributes (disconnects)
+	rs.add(membercfgobj)                       add a new member to the set with extra attributes (disconnects)
+	rs.addArb(hostportstr)                     add a new member which is arbiterOnly:true (disconnects)
+	rs.stepDown([stepdownSecs, catchUpSecs])   step down as primary (disconnects)
+	rs.syncFrom(hostportstr)                   make a secondary sync from the given member
+	rs.freeze(secs)                            make a node ineligible to become primary for the time specified
+	rs.remove(hostportstr)                     remove a host from the replica set (disconnects)
+	rs.slaveOk()                               allow queries on secondary nodes
+
+	rs.printReplicationInfo()                  check oplog size and time range
+	rs.printSlaveReplicationInfo()             check replica set members and replication lag
+	db.isMaster()                              check who is primary
+
+	reconfiguration helpers disconnect from the database so the shell will display
+	an error, even if the command succeeds.
+> rs.initiate(()
+... 
+... 
+> 
+> rs.initiate()
+{
+	"info2" : "no configuration specified. Using a default configuration for the set",
+	"me" : "localhost.localdomain:27001",
+	"ok" : 1
+}
+abc:OTHER> rs.status()
+{
+	"set" : "abc",
+	"date" : ISODate("2017-02-06T04:14:01.954Z"),
+	"myState" : 1,
+	"term" : NumberLong(1),
+	"heartbeatIntervalMillis" : NumberLong(2000),
+	"optimes" : {
+		"lastCommittedOpTime" : {
+			"ts" : Timestamp(1486354437, 1),
+			"t" : NumberLong(1)
+		},
+		"appliedOpTime" : {
+			"ts" : Timestamp(1486354437, 1),
+			"t" : NumberLong(1)
+		},
+		"durableOpTime" : {
+			"ts" : Timestamp(1486354437, 1),
+			"t" : NumberLong(1)
+		}
+	},
+	"members" : [
+		{
+			"_id" : 0,
+			"name" : "localhost.localdomain:27001",
+			"health" : 1,
+			"state" : 1,
+			"stateStr" : "PRIMARY",
+			"uptime" : 246,
+			"optime" : {
+				"ts" : Timestamp(1486354437, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDate" : ISODate("2017-02-06T04:13:57Z"),
+			"infoMessage" : "could not find member to sync from",
+			"electionTime" : Timestamp(1486354427, 1),
+			"electionDate" : ISODate("2017-02-06T04:13:47Z"),
+			"configVersion" : 1,
+			"self" : true
+		}
+	],
+	"ok" : 1
+}
+abc:PRIMARY> homework.b()
+5002
+abc:PRIMARY> 
+

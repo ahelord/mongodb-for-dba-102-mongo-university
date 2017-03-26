@@ -1,0 +1,249 @@
+
+abc:PRIMARY> rs.status()
+{
+	"set" : "abc",
+	"date" : ISODate("2017-02-06T04:33:52.083Z"),
+	"myState" : 1,
+	"term" : NumberLong(1),
+	"heartbeatIntervalMillis" : NumberLong(2000),
+	"optimes" : {
+		"lastCommittedOpTime" : {
+			"ts" : Timestamp(1486355627, 1),
+			"t" : NumberLong(1)
+		},
+		"appliedOpTime" : {
+			"ts" : Timestamp(1486355627, 1),
+			"t" : NumberLong(1)
+		},
+		"durableOpTime" : {
+			"ts" : Timestamp(1486355627, 1),
+			"t" : NumberLong(1)
+		}
+	},
+	"members" : [
+		{
+			"_id" : 0,
+			"name" : "localhost.localdomain:27001",
+			"health" : 1,
+			"state" : 1,
+			"stateStr" : "PRIMARY",
+			"uptime" : 1437,
+			"optime" : {
+				"ts" : Timestamp(1486355627, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDate" : ISODate("2017-02-06T04:33:47Z"),
+			"electionTime" : Timestamp(1486354427, 1),
+			"electionDate" : ISODate("2017-02-06T04:13:47Z"),
+			"configVersion" : 1,
+			"self" : true
+		}
+	],
+	"ok" : 1
+}
+abc:PRIMARY> rs.add("localhost:27002")
+{
+	"ok" : 0,
+	"errmsg" : "Either all host names in a replica set configuration must be localhost references, or none must be; found 1 out of 2",
+	"code" : 103,
+	"codeName" : "NewReplicaSetConfigurationIncompatible"
+}
+abc:PRIMARY> rs.status()
+{
+	"set" : "abc",
+	"date" : ISODate("2017-02-06T04:35:24.590Z"),
+	"myState" : 1,
+	"term" : NumberLong(1),
+	"heartbeatIntervalMillis" : NumberLong(2000),
+	"optimes" : {
+		"lastCommittedOpTime" : {
+			"ts" : Timestamp(1486355717, 1),
+			"t" : NumberLong(1)
+		},
+		"appliedOpTime" : {
+			"ts" : Timestamp(1486355717, 1),
+			"t" : NumberLong(1)
+		},
+		"durableOpTime" : {
+			"ts" : Timestamp(1486355717, 1),
+			"t" : NumberLong(1)
+		}
+	},
+	"members" : [
+		{
+			"_id" : 0,
+			"name" : "localhost.localdomain:27001",
+			"health" : 1,
+			"state" : 1,
+			"stateStr" : "PRIMARY",
+			"uptime" : 1529,
+			"optime" : {
+				"ts" : Timestamp(1486355717, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDate" : ISODate("2017-02-06T04:35:17Z"),
+			"electionTime" : Timestamp(1486354427, 1),
+			"electionDate" : ISODate("2017-02-06T04:13:47Z"),
+			"configVersion" : 1,
+			"self" : true
+		}
+	],
+	"ok" : 1
+}
+abc:PRIMARY> rs.add("localhost.localdomain:27002")
+{ "ok" : 1 }
+abc:PRIMARY> rs.status()
+{
+	"set" : "abc",
+	"date" : ISODate("2017-02-06T04:36:26.007Z"),
+	"myState" : 1,
+	"term" : NumberLong(1),
+	"heartbeatIntervalMillis" : NumberLong(2000),
+	"optimes" : {
+		"lastCommittedOpTime" : {
+			"ts" : Timestamp(1486355778, 1),
+			"t" : NumberLong(1)
+		},
+		"appliedOpTime" : {
+			"ts" : Timestamp(1486355778, 1),
+			"t" : NumberLong(1)
+		},
+		"durableOpTime" : {
+			"ts" : Timestamp(1486355778, 1),
+			"t" : NumberLong(1)
+		}
+	},
+	"members" : [
+		{
+			"_id" : 0,
+			"name" : "localhost.localdomain:27001",
+			"health" : 1,
+			"state" : 1,
+			"stateStr" : "PRIMARY",
+			"uptime" : 1591,
+			"optime" : {
+				"ts" : Timestamp(1486355778, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDate" : ISODate("2017-02-06T04:36:18Z"),
+			"electionTime" : Timestamp(1486354427, 1),
+			"electionDate" : ISODate("2017-02-06T04:13:47Z"),
+			"configVersion" : 2,
+			"self" : true
+		},
+		{
+			"_id" : 1,
+			"name" : "localhost.localdomain:27002",
+			"health" : 1,
+			"state" : 2,
+			"stateStr" : "SECONDARY",
+			"uptime" : 7,
+			"optime" : {
+				"ts" : Timestamp(1486355778, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDurable" : {
+				"ts" : Timestamp(1486355778, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDate" : ISODate("2017-02-06T04:36:18Z"),
+			"optimeDurableDate" : ISODate("2017-02-06T04:36:18Z"),
+			"lastHeartbeat" : ISODate("2017-02-06T04:36:24.785Z"),
+			"lastHeartbeatRecv" : ISODate("2017-02-06T04:36:21.320Z"),
+			"pingMs" : NumberLong(0),
+			"configVersion" : 2
+		}
+	],
+	"ok" : 1
+}
+abc:PRIMARY> rs.add("localhost.localdomain:27003")
+{ "ok" : 1 }
+abc:PRIMARY> rs.status()
+{
+	"set" : "abc",
+	"date" : ISODate("2017-02-06T04:36:54.095Z"),
+	"myState" : 1,
+	"term" : NumberLong(1),
+	"heartbeatIntervalMillis" : NumberLong(2000),
+	"optimes" : {
+		"lastCommittedOpTime" : {
+			"ts" : Timestamp(1486355811, 1),
+			"t" : NumberLong(1)
+		},
+		"appliedOpTime" : {
+			"ts" : Timestamp(1486355811, 1),
+			"t" : NumberLong(1)
+		},
+		"durableOpTime" : {
+			"ts" : Timestamp(1486355811, 1),
+			"t" : NumberLong(1)
+		}
+	},
+	"members" : [
+		{
+			"_id" : 0,
+			"name" : "localhost.localdomain:27001",
+			"health" : 1,
+			"state" : 1,
+			"stateStr" : "PRIMARY",
+			"uptime" : 1619,
+			"optime" : {
+				"ts" : Timestamp(1486355811, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDate" : ISODate("2017-02-06T04:36:51Z"),
+			"electionTime" : Timestamp(1486354427, 1),
+			"electionDate" : ISODate("2017-02-06T04:13:47Z"),
+			"configVersion" : 3,
+			"self" : true
+		},
+		{
+			"_id" : 1,
+			"name" : "localhost.localdomain:27002",
+			"health" : 1,
+			"state" : 2,
+			"stateStr" : "SECONDARY",
+			"uptime" : 35,
+			"optime" : {
+				"ts" : Timestamp(1486355811, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDurable" : {
+				"ts" : Timestamp(1486355811, 1),
+				"t" : NumberLong(1)
+			},
+			"optimeDate" : ISODate("2017-02-06T04:36:51Z"),
+			"optimeDurableDate" : ISODate("2017-02-06T04:36:51Z"),
+			"lastHeartbeat" : ISODate("2017-02-06T04:36:53.466Z"),
+			"lastHeartbeatRecv" : ISODate("2017-02-06T04:36:51.469Z"),
+			"pingMs" : NumberLong(0),
+			"configVersion" : 3
+		},
+		{
+			"_id" : 2,
+			"name" : "localhost.localdomain:27003",
+			"health" : 1,
+			"state" : 5,
+			"stateStr" : "STARTUP2",
+			"uptime" : 2,
+			"optime" : {
+				"ts" : Timestamp(0, 0),
+				"t" : NumberLong(-1)
+			},
+			"optimeDurable" : {
+				"ts" : Timestamp(0, 0),
+				"t" : NumberLong(-1)
+			},
+			"optimeDate" : ISODate("1970-01-01T00:00:00Z"),
+			"optimeDurableDate" : ISODate("1970-01-01T00:00:00Z"),
+			"lastHeartbeat" : ISODate("2017-02-06T04:36:53.466Z"),
+			"lastHeartbeatRecv" : ISODate("2017-02-06T04:36:53.901Z"),
+			"pingMs" : NumberLong(0),
+			"syncingTo" : "localhost.localdomain:27002",
+			"configVersion" : 3
+		}
+	],
+	"ok" : 1
+}
+abc:PRIMARY> 
+

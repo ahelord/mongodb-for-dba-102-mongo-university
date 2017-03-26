@@ -1,0 +1,53 @@
+2017-02-22T22:34:39.968-0500 I CONTROL  [initandlisten] MongoDB starting : pid=4265 port=27001 dbpath=/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1 64-bit host=localhost.localdomain
+2017-02-22T22:34:39.969-0500 I CONTROL  [initandlisten] db version v3.4.0-rc3
+2017-02-22T22:34:39.969-0500 I CONTROL  [initandlisten] git version: 7d68067e5a6272bb463acc4e7a6c6a144148039c
+2017-02-22T22:34:39.969-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2017-02-22T22:34:39.969-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-22T22:34:39.969-0500 I CONTROL  [initandlisten] modules: none
+2017-02-22T22:34:39.969-0500 I CONTROL  [initandlisten] build environment:
+2017-02-22T22:34:39.969-0500 I CONTROL  [initandlisten]     distmod: rhel70
+2017-02-22T22:34:39.969-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-22T22:34:39.969-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-22T22:34:39.969-0500 I CONTROL  [initandlisten] options: { net: { port: 27001 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "z" }, storage: { dbPath: "data/z1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "a.log" } }
+2017-02-22T22:34:40.020-0500 I -        [initandlisten] Detected data files in /home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-02-22T22:34:40.020-0500 I STORAGE  [initandlisten] 
+2017-02-22T22:34:40.020-0500 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-02-22T22:34:40.020-0500 I STORAGE  [initandlisten] See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-02-22T22:34:40.020-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=5095M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-22T22:34:41.423-0500 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-02-22T22:34:41.424-0500 I STORAGE  [initandlisten] The size storer reports that the oplog contains 22 records totaling to 2168 bytes
+2017-02-22T22:34:41.424-0500 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-02-22T22:34:41.502-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-22T22:34:41.502-0500 I CONTROL  [initandlisten] 
+2017-02-22T22:34:41.502-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-22T22:34:41.502-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-22T22:34:41.502-0500 I CONTROL  [initandlisten] 
+2017-02-22T22:34:41.561-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1/diagnostic.data'
+2017-02-22T22:34:41.563-0500 I NETWORK  [thread1] waiting for connections on port 27001
+2017-02-22T22:34:41.567-0500 I REPL     [replExecDBWorker-0] New replica set config in use: { _id: "z", version: 1, protocolVersion: 1, members: [ { _id: 1, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27002", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('58ae563b1435ca67253508bf') } }
+2017-02-22T22:34:41.568-0500 I REPL     [replExecDBWorker-0] This node is localhost:27001 in the config
+2017-02-22T22:34:41.568-0500 I REPL     [replExecDBWorker-0] transition to STARTUP2
+2017-02-22T22:34:41.568-0500 I REPL     [replExecDBWorker-0] Starting replication storage threads
+2017-02-22T22:34:41.569-0500 I REPL     [replExecDBWorker-0] Starting replication fetcher thread
+2017-02-22T22:34:41.569-0500 I REPL     [replExecDBWorker-0] Starting replication applier thread
+2017-02-22T22:34:41.569-0500 I REPL     [replExecDBWorker-0] Starting replication reporter thread
+2017-02-22T22:34:41.569-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-22T22:34:41.569-0500 I REPL     [rsSync] transition to RECOVERING
+2017-02-22T22:34:41.569-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-22T22:34:41.570-0500 I REPL     [rsSync] transition to SECONDARY
+2017-02-22T22:34:41.571-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27003
+2017-02-22T22:34:41.571-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-02-22T22:34:41.572-0500 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state PRIMARY
+2017-02-22T22:34:41.572-0500 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state ARBITER
+2017-02-22T22:34:43.544-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:39368 #1 (1 connection now open)
+2017-02-22T22:34:43.545-0500 I NETWORK  [conn1] received client metadata from 127.0.0.1:39368 conn1: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-22T22:34:45.259-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:39372 #2 (2 connections now open)
+2017-02-22T22:34:45.260-0500 I NETWORK  [conn2] received client metadata from 127.0.0.1:39372 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-22T22:34:47.572-0500 I REPL     [rsBackgroundSync] sync source candidate: localhost:27003
+2017-02-22T22:34:47.572-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27003
+2017-02-22T22:34:47.574-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27003
+2017-02-22T22:34:47.576-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27003
+2017-02-22T22:34:47.578-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27003
+2017-02-22T22:39:51.985-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:39402 #3 (3 connections now open)
+2017-02-22T22:39:51.985-0500 I NETWORK  [conn3] received client metadata from 127.0.0.1:39402 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-22T22:50:23.048-0500 I -        [conn3] end connection 127.0.0.1:39402 (3 connections now open)

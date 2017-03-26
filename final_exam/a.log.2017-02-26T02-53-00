@@ -1,0 +1,1257 @@
+2017-02-23T22:52:49.708-0500 I CONTROL  [initandlisten] MongoDB starting : pid=4582 port=27001 dbpath=/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1 64-bit host=localhost.localdomain
+2017-02-23T22:52:49.708-0500 I CONTROL  [initandlisten] db version v3.4.0-rc3
+2017-02-23T22:52:49.708-0500 I CONTROL  [initandlisten] git version: 7d68067e5a6272bb463acc4e7a6c6a144148039c
+2017-02-23T22:52:49.708-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2017-02-23T22:52:49.709-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-23T22:52:49.709-0500 I CONTROL  [initandlisten] modules: none
+2017-02-23T22:52:49.709-0500 I CONTROL  [initandlisten] build environment:
+2017-02-23T22:52:49.709-0500 I CONTROL  [initandlisten]     distmod: rhel70
+2017-02-23T22:52:49.709-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-23T22:52:49.709-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-23T22:52:49.709-0500 I CONTROL  [initandlisten] options: { net: { port: 27001 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "z" }, storage: { dbPath: "data/z1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "a.log" } }
+2017-02-23T22:52:49.751-0500 I -        [initandlisten] Detected data files in /home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1 created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2017-02-23T22:52:49.752-0500 I STORAGE  [initandlisten] 
+2017-02-23T22:52:49.752-0500 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-02-23T22:52:49.752-0500 I STORAGE  [initandlisten] See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-02-23T22:52:49.752-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=5095M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-23T22:52:50.755-0500 I STORAGE  [initandlisten] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-02-23T22:52:50.755-0500 I STORAGE  [initandlisten] The size storer reports that the oplog contains 249 records totaling to 24018 bytes
+2017-02-23T22:52:50.755-0500 I STORAGE  [initandlisten] Scanning the oplog to determine where to place markers for truncation
+2017-02-23T22:52:50.783-0500 I STORAGE  [initandlisten] dropping unused ident: collection-18-2007271765597761128
+2017-02-23T22:52:50.868-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-23T22:52:50.868-0500 I CONTROL  [initandlisten] 
+2017-02-23T22:52:50.868-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-23T22:52:50.868-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-23T22:52:50.868-0500 I CONTROL  [initandlisten] 
+2017-02-23T22:52:50.879-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1/diagnostic.data'
+2017-02-23T22:52:50.880-0500 I NETWORK  [thread1] waiting for connections on port 27001
+2017-02-23T22:52:50.882-0500 W NETWORK  [replExecDBWorker-2] Failed to connect to 127.0.0.1:27003, reason: Connection refused
+2017-02-23T22:52:50.883-0500 I REPL     [replExecDBWorker-2] New replica set config in use: { _id: "z", version: 1, protocolVersion: 1, members: [ { _id: 1, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27002", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('58ae563b1435ca67253508bf') } }
+2017-02-23T22:52:50.883-0500 I REPL     [replExecDBWorker-2] This node is localhost:27001 in the config
+2017-02-23T22:52:50.883-0500 I REPL     [replExecDBWorker-2] transition to STARTUP2
+2017-02-23T22:52:50.883-0500 I REPL     [replExecDBWorker-2] Starting replication storage threads
+2017-02-23T22:52:50.883-0500 I REPL     [replExecDBWorker-2] Starting replication fetcher thread
+2017-02-23T22:52:50.884-0500 I REPL     [replExecDBWorker-2] Starting replication applier thread
+2017-02-23T22:52:50.884-0500 I REPL     [replExecDBWorker-2] Starting replication reporter thread
+2017-02-23T22:52:50.884-0500 I REPL     [rsSync] transition to RECOVERING
+2017-02-23T22:52:50.884-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-23T22:52:50.884-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:52:50.884-0500 E REPL     [rsBackgroundSync] sync producer problem: 2 required optime (if provided) must be more recent than last fetched optime. requiredOpTime: { ts: Timestamp 1487907533000|1, t: 3 }, lastOpTimeFetched: { ts: Timestamp 1487907533000|1, t: 3 }
+2017-02-23T22:52:50.885-0500 I REPL     [rsSync] transition to SECONDARY
+2017-02-23T22:52:50.886-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:52:50.886-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:52:50.886-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:52:50.886-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-02-23T22:52:50.887-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:52:50.887-0500 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state ARBITER
+2017-02-23T22:52:50.887-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:52:50.887-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:52:50.887-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:52:50.887-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:52:53.124-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:34538 #1 (1 connection now open)
+2017-02-23T22:52:53.124-0500 I NETWORK  [conn1] received client metadata from 127.0.0.1:34538 conn1: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-23T22:52:55.888-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:52:55.889-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:52:55.889-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:52:55.889-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:52:55.890-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:52:55.890-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:52:55.890-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:52:55.891-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:52:55.891-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:00.891-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:00.892-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:00.892-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:00.892-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:00.893-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:00.893-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:00.893-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:00.894-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:00.894-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:02.030-0500 I REPL     [ReplicationExecutor] Starting an election, since we've seen no PRIMARY in the past 10000ms
+2017-02-23T22:53:02.030-0500 I REPL     [ReplicationExecutor] conducting a dry run election to see if we could be elected
+2017-02-23T22:53:02.031-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:02.032-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:02.032-0500 I REPL     [ReplicationExecutor] VoteRequester(term 3 dry run) received a yes vote from localhost:27002; response message: { term: 3, voteGranted: true, reason: "", ok: 1.0 }
+2017-02-23T22:53:02.032-0500 I REPL     [ReplicationExecutor] dry election run succeeded, running for election
+2017-02-23T22:53:02.033-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:02.033-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:02.034-0500 I REPL     [ReplicationExecutor] VoteRequester(term 4) failed to receive response from localhost:27003: HostUnreachable: Connection refused
+2017-02-23T22:53:02.034-0500 I REPL     [ReplicationExecutor] VoteRequester(term 4) received a yes vote from localhost:27002; response message: { term: 4, voteGranted: true, reason: "", ok: 1.0 }
+2017-02-23T22:53:02.034-0500 I REPL     [ReplicationExecutor] election succeeded, assuming primary role in term 4
+2017-02-23T22:53:02.034-0500 I REPL     [ReplicationExecutor] transition to PRIMARY
+2017-02-23T22:53:02.034-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:02.034-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-23T22:53:02.034-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:02.035-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:02.035-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:02.035-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:02.035-0500 I REPL     [ReplicationExecutor] My optime is most up-to-date, skipping catch-up and completing transition to primary.
+2017-02-23T22:53:02.036-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:02.036-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-02-23T22:53:02.036-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:02.036-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:02.037-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:02.037-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:02.037-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:02.992-0500 I REPL     [rsSync] transition to primary complete; database writes are now permitted
+2017-02-23T22:53:04.037-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:04.038-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:04.038-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:04.038-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:04.039-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:04.039-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:04.039-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:04.040-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:04.040-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:06.041-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:06.041-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:06.042-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:06.042-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:06.042-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:06.042-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:06.042-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:06.043-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:06.043-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:08.043-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:08.044-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:08.045-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:08.045-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:08.045-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:08.045-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:08.046-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:08.046-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:08.046-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:10.047-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:10.047-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:10.048-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:10.048-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:10.048-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:10.048-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:10.048-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:10.049-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:10.049-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:12.050-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:12.051-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:12.051-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:12.051-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:12.052-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:12.052-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:12.052-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:12.053-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:12.053-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:14.053-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:14.054-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:14.054-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:14.055-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:14.055-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:14.055-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:14.056-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:14.056-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:14.057-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:16.057-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:16.058-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:16.058-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:16.059-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:16.059-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:16.059-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:16.059-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:16.060-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:16.060-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:17.344-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:34726 #2 (2 connections now open)
+2017-02-23T22:53:17.344-0500 I NETWORK  [conn2] received client metadata from 127.0.0.1:34726 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-23T22:53:18.061-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:18.061-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:18.062-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:18.062-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:18.062-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:18.062-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:18.062-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:18.063-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:18.063-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:20.064-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:20.065-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:20.065-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:20.065-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:20.065-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:20.066-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:20.066-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:20.066-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:20.066-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:22.066-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:22.067-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:22.067-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:22.067-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:22.068-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:22.068-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:22.068-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:22.069-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:22.069-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:24.070-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:24.071-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:24.071-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:24.071-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:24.071-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:24.071-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:24.071-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:24.072-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:24.072-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:26.073-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:26.074-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:26.074-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:26.074-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:26.074-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:26.075-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:26.075-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:26.075-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:26.075-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:28.075-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:28.076-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:28.076-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:28.077-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:28.077-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:28.077-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:28.077-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:28.078-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:28.078-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:30.079-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:30.080-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:30.080-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:30.080-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:30.081-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:30.081-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:30.081-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:30.082-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:30.082-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:32.082-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:32.083-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:32.083-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:32.083-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:32.083-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:32.083-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:32.083-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:32.084-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:32.084-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:34.084-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:34.085-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:34.085-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:34.086-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:34.086-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:34.086-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:34.086-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:34.087-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:34.087-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:36.088-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:36.089-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:36.089-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:36.089-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:36.090-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:36.090-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:36.090-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:36.090-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:36.090-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:38.091-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:38.092-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:38.092-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:38.092-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:38.094-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:38.094-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:38.094-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:38.095-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:38.095-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:40.095-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:40.096-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:40.096-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:40.096-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:40.097-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:40.097-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:40.097-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:40.097-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:40.097-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:42.097-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:42.098-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:42.098-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:42.099-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:42.099-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:42.099-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:42.099-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:42.100-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:42.100-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:44.100-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:44.101-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:44.101-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:44.101-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:44.102-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:44.102-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:44.102-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:44.103-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:44.103-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:46.104-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:46.105-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:46.112-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:46.112-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:46.113-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:46.113-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:46.113-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:46.113-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:46.113-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:48.114-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:48.115-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:48.115-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:48.115-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:48.116-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:48.116-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:48.116-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:48.117-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:48.117-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:50.117-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:50.118-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:50.118-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:50.118-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:50.119-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:50.119-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:50.119-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:50.119-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:50.120-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:52.121-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:52.121-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:52.121-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:52.122-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:52.122-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:52.122-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:52.122-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:52.123-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:52.123-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:54.123-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:54.124-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:54.125-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:54.125-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:54.126-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:54.126-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:54.126-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:54.127-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:54.128-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:56.128-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:56.130-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:56.130-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:56.130-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:56.131-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:56.131-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:56.131-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:56.132-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:56.132-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:58.132-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:58.133-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:58.133-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:58.134-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:58.134-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:58.134-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:53:58.134-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:53:58.135-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:53:58.135-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:00.135-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:00.136-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:00.136-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:00.136-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:00.137-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:00.137-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:00.137-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:00.138-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:00.138-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:02.138-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:02.139-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:02.139-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:02.139-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:02.140-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:02.140-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:02.140-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:02.140-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:02.140-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:04.141-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:04.142-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:04.142-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:04.142-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:04.142-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:04.142-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:04.143-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:04.143-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:04.143-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:06.144-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:06.144-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:06.145-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:06.145-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:06.146-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:06.146-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:06.146-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:06.147-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:06.147-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:08.147-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:08.148-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:08.148-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:08.148-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:08.149-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:08.149-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:08.149-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:08.149-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:08.150-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:10.151-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:10.152-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:10.152-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:10.152-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:10.152-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:10.153-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:10.153-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:10.153-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:10.153-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:12.153-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:12.154-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:12.155-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:12.155-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:12.156-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:12.156-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:12.156-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:12.157-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:12.157-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:14.158-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:14.159-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:14.159-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:14.160-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:14.160-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:14.160-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:14.161-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:14.162-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:14.162-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:16.162-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:16.163-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:16.163-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:16.164-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:16.164-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:16.164-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:16.165-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:16.165-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:16.165-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:18.165-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:18.166-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:18.166-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:18.166-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:18.167-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:18.167-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:18.167-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:18.168-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:18.168-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:20.168-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:20.169-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:20.170-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:20.170-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:20.171-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:20.171-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:20.171-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:20.171-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:20.172-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:22.173-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:22.174-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:22.174-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:22.174-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:22.174-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:22.174-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:22.174-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:22.175-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:22.175-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:24.175-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:24.176-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:24.176-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:24.176-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:24.177-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:24.177-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:24.177-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:24.178-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:24.178-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:26.178-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:26.179-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:26.180-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:26.180-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:26.181-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:26.181-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:26.181-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:26.182-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:26.182-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:28.183-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:28.183-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:28.184-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:28.184-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:28.184-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:28.185-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:28.185-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:28.186-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:28.186-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:30.187-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:30.188-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:30.188-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:30.188-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:30.189-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:30.189-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:30.190-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:30.190-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:30.190-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:32.190-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:32.191-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:32.191-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:32.191-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:32.192-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:32.192-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:32.192-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:32.193-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:32.193-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:34.194-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:34.194-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:34.194-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:34.195-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:34.195-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:34.195-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:34.195-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:34.195-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:34.196-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:36.196-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:36.197-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:36.197-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:36.197-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:36.198-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:36.198-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:36.198-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:36.199-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:36.199-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:38.200-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:38.200-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:38.201-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:38.201-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:38.201-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:38.202-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:38.202-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:38.202-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:38.203-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:40.203-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:40.204-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:40.204-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:40.205-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:40.205-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:40.205-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:40.205-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:40.206-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:40.206-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:42.207-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:42.208-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:42.208-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:42.208-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:42.209-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:42.209-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:42.209-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:42.210-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:42.210-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:44.210-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:44.211-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:44.211-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:44.212-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:44.212-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:44.213-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:44.213-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:44.213-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:44.213-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:46.214-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:46.215-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:46.215-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:46.215-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:46.216-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:46.216-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:46.216-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:46.217-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:46.217-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:48.217-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:48.218-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:48.218-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:48.219-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:48.220-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:48.220-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:48.220-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:48.221-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:48.221-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:50.221-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:50.222-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:50.222-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:50.222-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:50.223-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:50.223-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:50.223-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:50.223-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:50.223-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:52.223-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:52.224-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:52.225-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:52.225-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:52.225-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:52.225-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:52.226-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:52.226-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:52.226-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:54.226-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:54.227-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:54.227-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:54.227-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:54.228-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:54.228-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:54.228-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:54.229-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:54.229-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:56.229-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:56.230-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:56.230-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:56.230-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:56.231-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:56.231-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:56.231-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:56.231-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:56.231-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:58.232-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:58.233-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:58.233-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:58.233-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:58.234-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:58.234-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:54:58.234-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:54:58.235-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:54:58.235-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:00.235-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:00.236-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:00.237-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:00.237-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:00.238-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:00.238-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:00.238-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:00.239-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:00.239-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:02.239-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:02.240-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:02.240-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:02.240-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:02.241-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:02.241-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:02.242-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:02.242-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:02.242-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:04.242-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:04.243-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:04.243-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:04.244-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:04.244-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:04.244-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:04.244-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:04.245-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:04.245-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:06.245-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:06.246-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:06.247-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:06.247-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:06.248-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:06.248-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:06.248-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:06.249-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:06.250-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:08.250-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:08.251-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:08.251-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:08.251-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:08.252-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:08.252-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:08.252-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:08.252-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:08.252-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:10.252-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:10.253-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:10.253-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:10.253-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:10.254-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:10.254-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:10.254-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:10.254-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:10.254-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:12.255-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:12.256-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:12.256-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:12.256-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:12.257-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:12.257-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:12.257-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:12.258-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:12.258-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:14.259-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:14.259-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:14.260-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:14.260-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:14.260-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:14.260-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:14.260-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:14.261-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:14.261-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:16.261-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:16.262-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:16.262-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:16.262-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:16.263-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:16.263-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:16.263-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:16.263-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:16.263-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:18.264-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:18.264-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:18.264-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:18.265-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:18.265-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:18.265-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:18.265-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:18.266-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:18.266-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:20.267-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:20.267-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:20.268-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:20.268-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:20.268-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:20.268-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:20.268-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:20.269-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:20.269-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:22.269-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:22.270-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:22.270-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:22.270-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:22.271-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:22.271-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:22.271-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:22.272-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:22.272-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:24.273-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:24.274-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:24.274-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:24.274-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:24.275-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:24.275-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:24.275-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:24.276-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:24.276-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:26.276-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:26.277-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:26.277-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:26.278-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:26.278-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:26.278-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:26.278-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:26.279-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:26.279-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:28.279-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:28.280-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:28.280-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:28.280-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:28.281-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:28.281-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:28.281-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:28.281-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:28.281-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:30.281-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:30.282-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:30.282-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:30.282-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:30.283-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:30.283-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:30.283-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:30.284-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:30.284-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:32.284-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:32.285-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:32.285-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:32.285-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:32.285-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:32.285-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:32.285-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:32.286-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:32.286-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:34.286-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:34.287-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:34.287-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:34.288-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:34.288-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:34.288-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:34.288-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:34.289-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:34.289-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:36.290-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:36.291-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:36.291-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:36.291-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:36.291-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:36.292-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:36.292-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:36.292-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:36.292-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:38.293-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:38.294-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:38.294-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:38.294-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:38.294-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:38.294-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:38.295-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:38.295-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:38.295-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:40.296-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:40.296-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:40.296-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:40.297-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:40.297-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:40.297-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:40.297-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:40.298-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:40.298-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:42.298-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:42.299-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:42.299-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:42.300-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:42.300-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:42.300-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:42.300-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:42.301-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:42.301-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:44.301-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:44.302-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:44.303-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:44.303-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:44.303-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:44.303-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:44.304-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:44.304-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:44.304-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:46.304-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:46.305-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:46.305-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:46.305-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:46.306-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:46.306-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:46.306-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:46.306-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:46.306-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:48.307-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:48.308-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:48.308-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:48.308-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:48.309-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:48.309-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:48.309-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:48.309-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:48.309-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:50.310-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:50.311-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:50.311-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:50.311-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:50.311-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:50.311-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:50.312-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:50.312-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:50.312-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:52.312-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:52.313-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:52.313-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:52.314-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:52.314-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:52.314-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:52.314-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:52.315-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:52.315-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:54.315-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:54.316-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:54.316-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:54.316-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:54.316-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:54.316-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:54.317-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:54.317-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:54.317-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:56.317-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:56.318-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:56.318-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:56.319-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:56.319-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:56.319-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:56.320-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:56.320-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:56.320-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:58.321-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:58.322-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:58.322-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:58.322-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:58.323-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:58.323-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:55:58.323-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:55:58.324-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:55:58.324-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:00.324-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:00.325-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:00.325-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:00.326-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:00.326-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:00.326-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:00.326-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:00.327-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:00.327-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:02.327-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:02.329-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:02.329-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:02.329-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:02.330-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:02.330-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:02.331-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:02.331-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:02.332-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:04.333-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:04.334-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:04.334-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:04.334-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:04.335-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:04.335-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:04.335-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:04.336-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:04.336-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:06.336-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:06.337-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:06.337-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:06.337-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:06.338-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:06.338-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:06.338-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:06.338-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:06.338-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:08.338-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:08.339-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:08.339-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:08.340-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:08.340-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:08.340-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:08.340-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:08.341-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:08.341-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:10.341-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:10.342-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:10.342-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:10.342-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:10.343-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:10.343-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:10.343-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:10.343-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:10.343-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:12.344-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:12.345-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:12.345-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:12.345-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:12.346-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:12.346-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:12.346-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:12.347-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:12.347-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:14.347-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:14.348-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:14.348-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:14.348-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:14.349-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:14.349-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:14.349-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:14.350-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:14.350-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:16.350-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:16.351-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:16.352-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:16.352-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:16.353-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:16.353-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:16.353-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:16.353-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:16.353-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:18.354-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:18.355-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:18.355-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:18.355-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:18.356-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:18.356-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:18.356-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:18.357-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:18.357-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:20.357-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:20.358-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:20.358-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:20.358-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:20.359-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:20.359-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:20.360-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:20.360-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:20.360-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:22.360-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:22.361-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:22.361-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:22.362-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:22.362-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:22.363-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:22.363-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:22.364-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:22.364-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:24.364-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:24.365-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:24.365-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:24.365-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:24.366-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:24.366-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:24.366-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:24.367-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:24.367-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:26.368-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:26.369-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:26.369-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:26.369-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:26.369-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:26.369-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:26.369-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:26.370-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:26.370-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:28.371-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:28.372-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:28.372-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:28.372-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:28.373-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:28.373-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:28.373-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:28.374-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:28.374-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:30.374-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:30.375-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:30.375-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:30.375-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:30.376-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:30.376-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:30.376-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:30.377-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:30.377-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:32.378-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:32.378-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:32.378-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:32.379-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:32.379-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:32.379-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:32.379-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:32.380-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:32.380-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:34.380-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:34.381-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:34.381-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:34.382-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:34.382-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:34.382-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:34.382-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:34.383-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:34.383-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:36.383-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:36.384-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:36.385-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:36.385-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:36.386-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:36.386-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:36.386-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:36.386-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:36.387-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:38.388-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:38.389-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:38.389-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:38.389-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:38.390-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:38.390-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:38.390-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:38.391-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:38.391-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:40.392-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:40.393-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:40.393-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:40.393-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:40.394-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:40.394-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:40.394-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:40.395-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:40.396-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:42.396-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:42.397-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:42.397-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:42.397-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:42.398-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:42.398-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:42.398-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:42.399-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:42.399-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:44.399-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:44.400-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:44.400-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:44.400-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:44.401-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:44.401-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:44.402-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:44.403-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:44.403-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:46.403-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:46.404-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:46.404-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:46.404-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:46.405-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:46.405-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:46.405-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:46.406-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:46.406-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:48.406-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:48.407-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:48.407-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:48.408-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:48.408-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:48.408-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:48.408-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:48.409-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:48.409-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:50.409-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:50.410-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:50.410-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:50.410-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:50.411-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:50.411-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:50.411-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:50.412-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:50.412-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:52.412-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:52.413-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:52.413-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:52.413-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:52.414-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:52.414-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:52.414-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:52.415-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:52.415-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:54.415-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:54.416-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:54.416-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:54.416-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:54.416-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:54.417-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:54.417-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:54.417-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:54.417-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:56.418-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:56.419-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:56.419-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:56.419-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:56.420-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:56.420-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:56.420-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:56.421-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:56.421-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:58.421-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:58.422-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:58.422-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:58.422-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:58.423-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:58.423-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:56:58.423-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:56:58.424-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:56:58.424-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:00.424-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:00.425-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:00.425-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:00.425-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:00.426-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:00.426-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:00.426-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:00.426-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:00.427-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:02.428-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:02.429-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:02.429-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:02.429-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:02.430-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:02.430-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:02.430-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:02.431-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:02.431-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:04.432-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:04.432-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:04.433-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:04.433-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:04.433-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:04.433-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:04.433-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:04.434-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:04.434-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:06.435-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:06.436-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:06.436-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:06.436-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:06.437-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:06.437-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:06.437-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:06.438-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:06.438-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:08.438-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:08.439-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:08.439-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:08.439-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:08.440-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:08.440-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:08.440-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:08.441-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:08.441-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:10.441-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:10.442-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:10.442-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:10.442-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:10.443-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:10.443-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:10.443-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:10.444-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:10.444-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:12.444-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:12.445-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:12.446-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:12.446-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:12.446-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:12.446-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:12.447-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:12.448-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:12.448-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:14.448-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:14.449-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:14.449-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:14.449-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:14.450-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:14.451-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:14.451-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:14.452-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:14.452-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:16.452-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:16.453-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:16.453-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:16.453-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:16.454-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:16.454-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:16.454-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:16.455-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Failed to connect to localhost:27003 - HostUnreachable: Connection refused
+2017-02-23T22:57:16.455-0500 I REPL     [ReplicationExecutor] Error in heartbeat request to localhost:27003; HostUnreachable: Connection refused
+2017-02-23T22:57:18.131-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36762 #3 (3 connections now open)
+2017-02-23T22:57:18.133-0500 I -        [conn3] end connection 127.0.0.1:36762 (3 connections now open)
+2017-02-23T22:57:18.137-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36770 #4 (3 connections now open)
+2017-02-23T22:57:18.139-0500 I NETWORK  [conn4] received client metadata from 127.0.0.1:36770 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-23T22:57:18.455-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-23T22:57:18.457-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27003
+2017-02-23T22:57:18.458-0500 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state SECONDARY
+2017-02-23T22:57:23.241-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36784 #5 (4 connections now open)
+2017-02-23T22:57:23.242-0500 I NETWORK  [conn5] received client metadata from 127.0.0.1:36784 conn5: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-23T22:57:23.244-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36788 #6 (5 connections now open)
+2017-02-23T22:57:23.244-0500 I NETWORK  [conn6] received client metadata from 127.0.0.1:36788 conn6: { driver: { name: "NetworkInterfaceASIO-RS", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-23T22:57:23.245-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36790 #7 (6 connections now open)
+2017-02-23T22:57:23.245-0500 I NETWORK  [conn7] received client metadata from 127.0.0.1:36790 conn7: { driver: { name: "MongoDB Internal Client", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-23T22:57:23.301-0500 I -        [conn7] end connection 127.0.0.1:36790 (6 connections now open)
+2017-02-23T23:11:59.865-0500 I -        [conn2] end connection 127.0.0.1:34726 (5 connections now open)

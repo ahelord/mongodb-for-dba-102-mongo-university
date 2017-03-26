@@ -1,0 +1,105 @@
+2017-02-22T22:24:56.807-0500 I CONTROL  [initandlisten] MongoDB starting : pid=3882 port=27001 dbpath=/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1 64-bit host=localhost.localdomain
+2017-02-22T22:24:56.808-0500 I CONTROL  [initandlisten] db version v3.4.0-rc3
+2017-02-22T22:24:56.808-0500 I CONTROL  [initandlisten] git version: 7d68067e5a6272bb463acc4e7a6c6a144148039c
+2017-02-22T22:24:56.808-0500 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1e-fips 11 Feb 2013
+2017-02-22T22:24:56.808-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2017-02-22T22:24:56.808-0500 I CONTROL  [initandlisten] modules: none
+2017-02-22T22:24:56.808-0500 I CONTROL  [initandlisten] build environment:
+2017-02-22T22:24:56.808-0500 I CONTROL  [initandlisten]     distmod: rhel70
+2017-02-22T22:24:56.808-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2017-02-22T22:24:56.808-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2017-02-22T22:24:56.808-0500 I CONTROL  [initandlisten] options: { net: { port: 27001 }, processManagement: { fork: true }, replication: { oplogSizeMB: 50, replSet: "z" }, storage: { dbPath: "data/z1", mmapv1: { smallFiles: true } }, systemLog: { destination: "file", path: "a.log" } }
+2017-02-22T22:24:56.857-0500 I STORAGE  [initandlisten] 
+2017-02-22T22:24:56.857-0500 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2017-02-22T22:24:56.857-0500 I STORAGE  [initandlisten] See http://dochub.mongodb.org/core/prodnotes-filesystem
+2017-02-22T22:24:56.857-0500 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=5095M,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
+2017-02-22T22:24:57.688-0500 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2017-02-22T22:24:57.689-0500 I CONTROL  [initandlisten] 
+2017-02-22T22:24:57.689-0500 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-02-22T22:24:57.689-0500 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-02-22T22:24:57.689-0500 I CONTROL  [initandlisten] 
+2017-02-22T22:24:57.924-0500 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/lrodriguez/Curso Mongo University 102 MongoDb For DBA/final_exam/data/z1/diagnostic.data'
+2017-02-22T22:24:58.167-0500 I REPL     [initandlisten] Did not find local voted for document at startup;  NoMatchingDocument: Did not find replica set lastVote document in local.replset.election
+2017-02-22T22:24:58.167-0500 I REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2017-02-22T22:24:58.168-0500 I NETWORK  [thread1] waiting for connections on port 27001
+2017-02-22T22:25:47.435-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36414 #1 (1 connection now open)
+2017-02-22T22:25:47.436-0500 I -        [conn1] end connection 127.0.0.1:36414 (1 connection now open)
+2017-02-22T22:25:47.441-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36422 #2 (1 connection now open)
+2017-02-22T22:25:47.442-0500 I NETWORK  [conn2] received client metadata from 127.0.0.1:36422 conn2: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-22T22:25:47.444-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27003
+2017-02-22T22:25:47.446-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27003
+2017-02-22T22:25:49.448-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36436 #3 (2 connections now open)
+2017-02-22T22:25:49.449-0500 I -        [conn3] end connection 127.0.0.1:36436 (2 connections now open)
+2017-02-22T22:25:49.934-0500 I REPL     [replExecDBWorker-1] Starting replication storage threads
+2017-02-22T22:25:49.934-0500 I REPL     [ReplicationExecutor] New replica set config in use: { _id: "z", version: 1, protocolVersion: 1, members: [ { _id: 1, host: "localhost:27001", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "localhost:27002", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 3, host: "localhost:27003", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: 2000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('58ae563b1435ca67253508bf') } }
+2017-02-22T22:25:49.935-0500 I REPL     [ReplicationExecutor] This node is localhost:27001 in the config
+2017-02-22T22:25:49.935-0500 I REPL     [ReplicationExecutor] transition to STARTUP2
+2017-02-22T22:25:49.935-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Connecting to localhost:27002
+2017-02-22T22:25:49.936-0500 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state SECONDARY
+2017-02-22T22:25:49.936-0500 I ASIO     [NetworkInterfaceASIO-Replication-0] Successfully connected to localhost:27002
+2017-02-22T22:25:49.937-0500 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state STARTUP
+2017-02-22T22:25:49.941-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36448 #4 (2 connections now open)
+2017-02-22T22:25:49.942-0500 I NETWORK  [conn4] received client metadata from 127.0.0.1:36448 conn4: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-22T22:25:50.428-0500 I REPL     [initial sync-0] DataReplicator::_anyActiveHandles_inlock returned false as nothing is active.
+2017-02-22T22:25:50.683-0500 I REPL     [initial sync-0] sync source candidate: localhost:27003
+2017-02-22T22:25:50.683-0500 I STORAGE  [replication-0] dropAllDatabasesExceptLocal 1
+2017-02-22T22:25:50.683-0500 I REPL     [replication-0] ******
+2017-02-22T22:25:50.684-0500 I REPL     [replication-0] creating replication oplog of size: 50MB...
+2017-02-22T22:25:50.840-0500 I STORAGE  [replication-0] Starting WiredTigerRecordStoreThread local.oplog.rs
+2017-02-22T22:25:50.840-0500 I STORAGE  [replication-0] The size storer reports that the oplog contains 0 records totaling to 0 bytes
+2017-02-22T22:25:50.840-0500 I STORAGE  [replication-0] Scanning the oplog to determine where to place markers for truncation
+2017-02-22T22:25:51.446-0500 I REPL     [replication-0] ******
+2017-02-22T22:25:51.447-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27003
+2017-02-22T22:25:51.448-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27003
+2017-02-22T22:25:51.450-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27003
+2017-02-22T22:25:51.451-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27003
+2017-02-22T22:25:51.453-0500 I REPL     [replication-0] CollectionCloner::start called, on ns:admin.system.version
+2017-02-22T22:25:51.680-0500 I INDEX    [InitialSyncInserters-admin.system.version0] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2017-02-22T22:25:51.680-0500 I INDEX    [InitialSyncInserters-admin.system.version0] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-02-22T22:25:51.779-0500 I INDEX    [InitialSyncInserters-admin.system.version0] build index on: admin.system.version properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "admin.system.version" }
+2017-02-22T22:25:51.779-0500 I INDEX    [InitialSyncInserters-admin.system.version0] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2017-02-22T22:25:51.781-0500 I COMMAND  [InitialSyncInserters-admin.system.version0] setting featureCompatibilityVersion to 3.4
+2017-02-22T22:25:51.878-0500 I REPL     [repl writer worker 0] data clone finished, status: OK
+2017-02-22T22:25:51.879-0500 I REPL     [replication-0] No need to apply operations. (currently at { : Timestamp 1487820348000|1 })
+2017-02-22T22:25:51.879-0500 I REPL     [initial sync-0] Initial sync attempt finishing up.
+2017-02-22T22:25:51.880-0500 I REPL     [initial sync-0] Initial Sync Statistics: { failedInitialSyncAttempts: 0, maxFailedInitialSyncAttempts: 10, initialSyncStart: new Date(1487820349935), initialSyncEnd: new Date(1487820351880), initialSyncElapsedMillis: 1945, initialSyncAttempts: [ { durationMillis: 430, status: "OK", syncSource: "localhost:27003" } ], fetchedMissingDocs: 0, appliedOps: 0, initialSyncOplogStart: Timestamp 1487820348000|1, initialSyncOplogEnd: Timestamp 1487820348000|1, databases: { databasesCloned: 1, admin: { collections: 1, clonedCollections: 1, start: new Date(1487820351451), end: new Date(1487820351878), elapsedMillis: 427, admin.system.version: { documentsToCopy: 1, documentsCopied: 1, indexes: 2, fetchedBatches: 1, start: new Date(1487820351453), end: new Date(1487820351878), elapsedMillis: 425 } } } }
+2017-02-22T22:25:51.880-0500 I REPL     [replication-0] Finished fetching oplog during initial sync: CallbackCanceled: Callback canceled. Last fetched optime and hash: { ts: Timestamp 1487820348000|1, t: -1 }[-9038973151048022778]
+2017-02-22T22:25:51.880-0500 I REPL     [initial sync-0] DataReplicator::_anyActiveHandles_inlock returned false as nothing is active.
+2017-02-22T22:25:51.880-0500 I REPL     [initial sync-0] DataReplicator::_anyActiveHandles_inlock returned false as nothing is active.
+2017-02-22T22:25:51.956-0500 I REPL     [initial sync-0] initial sync done; took 1s.
+2017-02-22T22:25:51.956-0500 I REPL     [initial sync-0] Starting replication fetcher thread
+2017-02-22T22:25:51.956-0500 I REPL     [initial sync-0] Starting replication applier thread
+2017-02-22T22:25:51.956-0500 I REPL     [initial sync-0] Starting replication reporter thread
+2017-02-22T22:25:51.956-0500 I REPL     [rsBackgroundSync] could not find member to sync from
+2017-02-22T22:25:51.956-0500 I REPL     [rsSync] transition to RECOVERING
+2017-02-22T22:25:51.957-0500 I REPL     [ReplicationExecutor] Member localhost:27002 is now in state ARBITER
+2017-02-22T22:25:51.958-0500 I REPL     [rsSync] transition to SECONDARY
+2017-02-22T22:26:00.261-0500 I COMMAND  [conn2] command local.replset.election command: replSetRequestVotes { replSetRequestVotes: 1, setName: "z", dryRun: true, term: 0, candidateIndex: 2, configVersion: 1, lastCommittedOp: { ts: Timestamp 1487820348000|1, t: -1 } } numYields:0 reslen:63 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { W: 2 } } } protocol:op_command 402ms
+2017-02-22T22:26:00.781-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36472 #5 (3 connections now open)
+2017-02-22T22:26:00.781-0500 I NETWORK  [conn5] received client metadata from 127.0.0.1:36472 conn5: { driver: { name: "NetworkInterfaceASIO-Replication", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-22T22:26:01.959-0500 I REPL     [ReplicationExecutor] Member localhost:27003 is now in state PRIMARY
+2017-02-22T22:26:02.959-0500 I REPL     [rsBackgroundSync] sync source candidate: localhost:27003
+2017-02-22T22:26:02.964-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Connecting to localhost:27003
+2017-02-22T22:26:02.966-0500 I ASIO     [NetworkInterfaceASIO-RS-0] Successfully connected to localhost:27003
+2017-02-22T22:27:00.781-0500 I -        [conn2] end connection 127.0.0.1:36422 (3 connections now open)
+2017-02-22T22:28:47.800-0500 I NETWORK  [thread1] connection accepted from 127.0.0.1:36488 #6 (3 connections now open)
+2017-02-22T22:28:47.801-0500 I NETWORK  [conn6] received client metadata from 127.0.0.1:36488 conn6: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.0-rc3" }, os: { type: "Linux", name: "Fedora release 24 (Twenty Four)", architecture: "x86_64", version: "Kernel 4.6.7-300.fc24.x86_64" } }
+2017-02-22T22:29:04.957-0500 I COMMAND  [conn6] terminating, shutdown command received
+2017-02-22T22:29:04.957-0500 I NETWORK  [conn6] shutdown: going to close listening sockets...
+2017-02-22T22:29:04.957-0500 I NETWORK  [conn6] closing listening socket: 7
+2017-02-22T22:29:04.957-0500 I NETWORK  [conn6] closing listening socket: 8
+2017-02-22T22:29:04.957-0500 I NETWORK  [conn6] removing socket file: /tmp/mongodb-27001.sock
+2017-02-22T22:29:04.958-0500 I NETWORK  [conn6] shutdown: going to flush diaglog...
+2017-02-22T22:29:04.958-0500 I REPL     [conn6] shutting down replication subsystems
+2017-02-22T22:29:04.958-0500 I REPL     [conn6] Waiting for shutdown of DataReplicator.
+2017-02-22T22:29:04.958-0500 I REPL     [replication-1] DataReplicator::_anyActiveHandles_inlock returned false as nothing is active.
+2017-02-22T22:29:04.958-0500 I REPL     [conn6] Stopping replication reporter thread
+2017-02-22T22:29:04.958-0500 I REPL     [SyncSourceFeedback] SyncSourceFeedback error sending update to localhost:27003: CallbackCanceled: Reporter no longer valid
+2017-02-22T22:29:04.958-0500 I REPL     [conn6] Stopping replication fetcher thread
+2017-02-22T22:29:04.958-0500 I REPL     [conn6] Stopping replication applier thread
+2017-02-22T22:29:04.960-0500 I REPL     [conn6] Stopping replication storage threads
+2017-02-22T22:29:04.960-0500 I FTDC     [conn6] Shutting down full-time diagnostic data capture
+2017-02-22T22:29:04.966-0500 I STORAGE  [conn6] WiredTigerKVEngine shutting down
+2017-02-22T22:29:05.452-0500 I STORAGE  [conn6] shutdown: removing fs lock...
+2017-02-22T22:29:05.452-0500 I CONTROL  [conn6] now exiting
+2017-02-22T22:29:05.452-0500 I CONTROL  [conn6] shutting down with code:0
